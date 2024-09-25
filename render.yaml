@@ -1,11 +1,12 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: avatarapp
+    databaseName: avatarapp_development
+    user: postgres
     plan: free
+
 services:
   - type: web
-    name: mysite
+    name: avatarapp
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
